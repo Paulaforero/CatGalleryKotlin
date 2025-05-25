@@ -41,7 +41,11 @@ class OnBoardingActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            OnBoardingScreen()
+            AplicacionesMovilesProyectoTheme {
+                AplicacionesMovilesProyectoTheme {
+                    OnBoardingScreen()
+                }
+            }
         }
     }
 }
