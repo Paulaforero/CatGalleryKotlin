@@ -118,26 +118,5 @@ fun ActionButton(label: String) {
 @Preview(showBackground = true)
 @Composable
 fun OnBoardingPreview() {
-    AplicacionesMovilesProyectoTheme {
-        Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(innerPadding),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                TitleText("Bienvenido a CatGallery");
-                Spacer(modifier = Modifier.height(16.dp))
-                Image(
-                    painter = painterResource(id = R.drawable.post_cat),
-                    contentDescription = "Instagram post cat",
-                    modifier = Modifier
-                        .size(400.dp)
-                )
-                Spacer(modifier = Modifier.height(25.dp))
-                ActionButton("Iniciar");
-            }
-        }
-    }
+    OnBoardingScreen()
 }
